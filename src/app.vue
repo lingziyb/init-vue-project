@@ -11,17 +11,7 @@
 <style rel="stylesheet/less" lang="less" scoped>
 	* {
 		padding: 0;
-		ul {
-			list-style: none;
-
-			li {
-				height: 50px;
-				margin-top: 15px;
-				background-color: blanchedalmond;
-				box-sizing: content-box;
-				-moz-box-sizing: content-box;
-			}
-		}
+		list-style: none;
 	}
 
 	html, body {

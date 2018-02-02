@@ -7522,7 +7522,7 @@ exports.reload = tryWrap(function (id, options) {
 })
 
 },{}],4:[function(require,module,exports) {
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("*[data-v-763d088e] {\n  padding: 0;\n}\n* ul[data-v-763d088e] {\n  list-style: none;\n}\n* ul li[data-v-763d088e] {\n  height: 50px;\n  margin-top: 15px;\n  background-color: blanchedalmond;\n  box-sizing: content-box;\n  -moz-box-sizing: content-box;\n}\nhtml[data-v-763d088e],\nbody[data-v-763d088e] {\n  height: 100%;\n}\n#app[data-v-763d088e] {\n  height: 100%;\n}")
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("*[data-v-763d088e] {\n  padding: 0;\n  list-style: none;\n}\nhtml[data-v-763d088e],\nbody[data-v-763d088e] {\n  height: 100%;\n}\n#app[data-v-763d088e] {\n  height: 100%;\n}")
 ;(function(){
 'use strict';
 
@@ -7547,7 +7547,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   if (!module.hot.data) {
     hotAPI.createRecord("data-v-763d088e", __vue__options__)
   } else {
-    hotAPI.rerender("data-v-763d088e", __vue__options__)
+    hotAPI.reload("data-v-763d088e", __vue__options__)
   }
 })()}
 },{"vueify/lib/insert-css":12,"vue-hot-reload-api":11,"vue":10}],9:[function(require,module,exports) {
@@ -10092,8 +10092,8 @@ const router = new _vueRouter2.default({
 	mode: 'history',
 	routes: _routes2.default
 });
-// Vue.config.productionTip = false;
 
+// Vue.config.productionTip = false;
 
 new _vue2.default({
 	el: '#app',
