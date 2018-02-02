@@ -68,7 +68,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({14:[function(require,module,exports) {
+})({10:[function(require,module,exports) {
 var global = (1,eval)("this");
 'use strict';
 
@@ -7266,7 +7266,7 @@ Vue$3.nextTick(function () {
 /*  */
 
 exports.default = Vue$3;
-},{}],19:[function(require,module,exports) {
+},{}],12:[function(require,module,exports) {
 var inserted = exports.cache = {}
 
 function noop () {}
@@ -7291,7 +7291,7 @@ exports.insert = function (css) {
   }
 }
 
-},{}],18:[function(require,module,exports) {
+},{}],11:[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = (window.__VUE_HOT_MAP__ = Object.create(null))
@@ -7521,7 +7521,7 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],6:[function(require,module,exports) {
+},{}],4:[function(require,module,exports) {
 var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("*[data-v-763d088e] {\n  padding: 0;\n}\n* ul[data-v-763d088e] {\n  list-style: none;\n}\n* ul li[data-v-763d088e] {\n  height: 50px;\n  margin-top: 15px;\n  background-color: blanchedalmond;\n  box-sizing: content-box;\n  -moz-box-sizing: content-box;\n}\nhtml[data-v-763d088e],\nbody[data-v-763d088e] {\n  height: 100%;\n}\n#app[data-v-763d088e] {\n  height: 100%;\n}")
 ;(function(){
 'use strict';
@@ -7550,7 +7550,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.rerender("data-v-763d088e", __vue__options__)
   }
 })()}
-},{"vueify/lib/insert-css":19,"vue-hot-reload-api":18,"vue":14}],15:[function(require,module,exports) {
+},{"vueify/lib/insert-css":12,"vue-hot-reload-api":11,"vue":10}],9:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10003,13 +10003,47 @@ if (inBrowser && window.Vue) {
 }
 
 exports.default = VueRouter;
-},{}],11:[function(require,module,exports) {
-console.log( 'home' );
-
-},{}],10:[function(require,module,exports) {
-console.log( 'home' );
-
-},{}],7:[function(require,module,exports) {
+},{}],5:[function(require,module,exports) {
+;(function(){
+"use strict";
+})()
+if (module.exports.__esModule) module.exports = module.exports.default
+var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
+if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('h2',[_vm._v("home")])}
+__vue__options__.staticRenderFns = []
+__vue__options__._scopeId = "data-v-21cec976"
+if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-21cec976", __vue__options__)
+  } else {
+    hotAPI.reload("data-v-21cec976", __vue__options__)
+  }
+})()}
+},{"vue-hot-reload-api":11,"vue":10}],6:[function(require,module,exports) {
+;(function(){
+"use strict";
+})()
+if (module.exports.__esModule) module.exports = module.exports.default
+var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
+if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('h2',[_vm._v("user")])}
+__vue__options__.staticRenderFns = []
+__vue__options__._scopeId = "data-v-7377db31"
+if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7377db31", __vue__options__)
+  } else {
+    hotAPI.reload("data-v-7377db31", __vue__options__)
+  }
+})()}
+},{"vue-hot-reload-api":11,"vue":10}],3:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10029,7 +10063,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const routes = [{ path: '/home', component: _home2.default }, { path: '/user', component: _user2.default }];
 
 exports.default = routes;
-},{"./pages/home":11,"./pages/user":10}],4:[function(require,module,exports) {
+},{"./pages/home":5,"./pages/user":6}],2:[function(require,module,exports) {
 'use strict';
 
 var _vue = require('vue');
@@ -10052,6 +10086,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 console.log('index');
 
+_vue2.default.use(_vueRouter2.default);
+
 const router = new _vueRouter2.default({
 	mode: 'history',
 	routes: _routes2.default
@@ -10059,12 +10095,12 @@ const router = new _vueRouter2.default({
 // Vue.config.productionTip = false;
 
 
-const vm = new _vue2.default({
+new _vue2.default({
 	el: '#app',
 	router,
 	render: h => h(_app2.default)
 });
-},{"vue":14,"./app.vue":6,"vue-router":15,"./routes":7}],0:[function(require,module,exports) {
+},{"vue":10,"./app.vue":4,"vue-router":9,"./routes":3}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module(config) {
@@ -10083,7 +10119,7 @@ function Module(config) {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://localhost:35293/');
+  var ws = new WebSocket('ws://localhost:1123/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -10186,4 +10222,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,4])
+},{}]},{},[0,2])
