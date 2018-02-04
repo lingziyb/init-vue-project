@@ -1,9 +1,9 @@
 <template>
 	<div class="popup">
-		home
+		login
 		<header>
 			<div style="font-size: 21px;padding: 15px;">用户登录</div>
-			<input placeholder="请输入用户名" v-model="username">
+			<input placeholder="请输入用户名" v-model="username">{{username}}
 			<input placeholder="请输入密码" type="password" v-model="password">
 			<button @click="login" type="primary">登录</button>
 			<button @click="register" type="success">注册</button>

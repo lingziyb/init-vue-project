@@ -1,6 +1,6 @@
 <template>
 	<div class="popup">
-		home
+		register
 		<header>
 			<div style="font-size: 21px;padding: 15px;">用户登录</div>
 			<input placeholder="请输入用户名" v-model="username">

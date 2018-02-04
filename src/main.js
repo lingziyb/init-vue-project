@@ -1,8 +1,6 @@
-console.log( 'index' );
-
 import Vue from 'vue';
-import App from './app.vue';
 import VueRouter from 'vue-router';
+import App from './app.vue';
 import routes from './routes';
 
 Vue.use( VueRouter );
